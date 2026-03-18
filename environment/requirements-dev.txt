@@ -195,7 +195,7 @@ python-dateutil==2.9.0.post0
     #   pandas
 pytz==2025.2
     # via pandas
-pywin32==311
+pywin32==311; sys_platform == "win32"
     # via jupyter-core
 pyyaml==6.0.2
     # via quarto
@@ -275,7 +275,7 @@ tzdata==2025.2
     # via pandas
 urllib3==2.5.0
     # via requests
-vidigi==1.0.0
+vidigi==0.0.4
     # via -r C:\Users\Helena Robinson\Desktop\Non-Elective-Flow-Simulation\environment\requirements.in
 watchdog==6.0.0
     # via streamlit
