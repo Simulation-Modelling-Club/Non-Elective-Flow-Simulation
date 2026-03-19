@@ -10,7 +10,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "pip3 install --user -r app/requirements.txt; [ -f environment/requirements.txt ] && pip3 install --user -r environment/requirements.txt; [ -f environment/requirements-dev.txt ] && pip3 install --user -r environment/requirements-dev.txt; echo '✅ Packages installed and Requirements met'"
+    "updateContentCommand": "pip3 install --user -r app/requirements.txt; [ -f environment/requirements.txt ] && pip3 install --user -r environment/requirements.txt; [ -f environment/requirements-dev.txt ] && pip3 install --user -r environment/requirements-dev.txt; echo '✅ Packages installed and Requirements met'"
   
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"
