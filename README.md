@@ -16,7 +16,7 @@ The strategies employed to tackle this problem are increasing the number of beds
 This repo contains a Discrete Event Simulation (DES) model (app/model.py), a user friendly streamlit app front-end (app) and a series of Quarto reports (docs). 
 
 ### References
-* The app is published on [Streamlit Community Cloud](https://non-elective-flow-simulation-coch.streamlit.app/).
+* The app is published on [Streamlit Community Cloud](https://non-elective-flow-simulation-model-club.streamlit.app/).
 * This project was completed as part of the [HSMA Programme](https://hsma.co.uk/previous_projects/hsma_6/H6_6001_DES_modelling_non_elective_flow/index.html)
 
 Note: Only simulated data are shared in this repository
