@@ -23,7 +23,7 @@ Note: Only simulated data are shared in this repository
 
 ### Project Structure
 
-* **app**  This folder contains the code required to run the model as an app and deploy on Streamlit Community Cloud, run launch.py to run the app. **Model.py** contains the model code.
+* **app**  This folder contains the code required to run the model as an app and deploy on Streamlit Community Cloud, run launch.py to run the app (by running line python -m streamlit run app/launch.py in the terminal). **Model.py** contains the model code.
 * **docs** This folder contains quarto documents which describe how the model handles length of stay and reneging behaviours, and also some quarto documents which describe model findings (results). Some of these documents use real system data so if running in an external organisation you will need to change the data source.
 * **environment** This folder contains a .yml for recreating a conda environment and also requirements.in / requirements.txt files for using venv or other package managers. There is also another requirements.txt file in the app folder which is required for deployment on Streamlit Community cloud. For notes on use of environment files see [here](https://github.com/Countess-of-Chester-Hospital-NHS-FT/Python-Environment-Notes)
 

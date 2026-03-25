@@ -4,11 +4,33 @@
   "name": "Python 3",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+  "remoteUser": "vscode",
   "features": {},
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-
+  "customizations": {
+		"vscode": {
+			"extensions": [
+				"quarto.quarto",
+				"REditorSupport.r",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+				"MS-vsliveshare.vsliveshare",
+				"ms-toolsai.jupyter",
+				"grapecity.gc-excelviewer",
+				"searking.preview-vscode"
+			],
+			"settings": {
+				"r.rterm.option": [
+					"--no-save",
+					"--no-restore-data",
+					"--quiet"
+				],
+				"r.useRenvLibPath": true
+			}
+    }
+  },
   // Use 'postCreateCommand' to run commands after the container is created.
     "updateContentCommand": "pip3 install --user -r app/requirements.txt; [ -f environment/requirements.txt ] && pip3 install --user -r environment/requirements.txt; [ -f environment/requirements-dev.txt ] && pip3 install --user -r environment/requirements-dev.txt; echo '✅ Packages installed and Requirements met'"
   
